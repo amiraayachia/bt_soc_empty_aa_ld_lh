@@ -31,6 +31,8 @@
 #ifndef APP_H
 #define APP_H
 
+#include "sl_sleeptimer.h"
+
 /**************************************************************************//**
  * Application Init.
  *****************************************************************************/
@@ -40,5 +42,7 @@ void app_init(void);
  * Application Process Action.
  *****************************************************************************/
 void app_process_action(void);
+
+void callback(sl_sleeptimer_timer_handle_t *handle, void *data);
 
 #endif // APP_H
